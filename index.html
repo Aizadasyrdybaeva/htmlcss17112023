@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div class="popover">
-    <button class="popover-trigger">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <q>
+      <p class="example-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+        rerum. Exercitationem dicta, at corporis nihil quae alias ipsum quo
+        totam asperiores iure ab labore non blanditiis quaerat placeat velit
+        quas.
+      </p>
+      <p class="example-2">
+        Laboriosam minus numquam tenetur quas corporis ex reprehenderit error
+        illo aliquid. Recusandae eius omnis quam quas explicabo praesentium
+        tempora nostrum deleniti! Ipsam placeat sapiente quam vitae. Quasi
+        maiores quidem atque!
+      </p>
+      <p class="example-3">
+        Eligendi autem deleniti modi nostrum error corrupti architecto rerum
+        quam itaque odit, voluptatibus veniam temporibus, quae eum explicabo
+        reiciendis, harum adipisci? Recusandae non fugit obcaecati vero iure
+        asperiores, sit eligendi.
+      </p>
+    </q>
+    <div class="popover">
+      <button class="popover-trigger">Add to cart</button>
+      <div class="popover-content">
+        <span></span>This item costs <strong> $50</strong>
+      </div>
+    </div>
+
+    <div class="popover">
+      <a href="#" class="popover-trigger"> Remove from cart </a>
+      <div class="popover-content"><span></span>This removes from cart.</div>
+    </div>
+
+
+    
+    <button data-popover="This item costr $50">
       Add to cart
     </button>
-    <div class="popover-content">
-      This item costs <strong> $50</strong>
-    </div>
-  </div>
-</body>
+
+    <a href="#" data-popover="This removes item from cart">
+      Remove from cart
+    </a>
+  </body>
 </html>
